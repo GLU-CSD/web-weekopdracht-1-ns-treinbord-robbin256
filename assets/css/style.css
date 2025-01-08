@@ -16,7 +16,7 @@
 #middle {
     width: 568px;
     height: 339px;
-    background-color: rgb(0, 0, 106);
+    background-color: rgb(8, 105, 196);
     padding: 35px;
     box-sizing: border-box;
     border: 2px solid #000;
@@ -25,6 +25,71 @@
 #right{
     width:128px;
     height: 335px;
-    background-color: rgb(0, 0, 106);
+    background-color: rgb(8, 105, 196);
     border: 2px solid #000;
 }
+
+.spoorInfo{
+    width: 96px ;
+    height: 96px ;
+    display: inline-block;
+    background-color: white;
+    margin-left: +16px; 
+    margin-top: 32px;
+    color: rgb(8, 105, 196);
+
+}
+
+.spoorInfoText{
+    background-color: blue;
+    color: rgb(8, 105, 196);
+}
+
+.vierkantje{
+    width: 20px ;
+    height: 20px ;
+    display: inline-block;
+    background-color: rgb(8, 105, 196);
+}
+
+img{
+    text-align: right;
+    width: 100px; 
+    height: auto; 
+    margin-top: -10px;
+    margin-left: 370px;
+}
+
+.infoscherm{
+    width: 480px;
+    height: 265px;
+    background-color: white;
+    border: 3px solid black;
+    color: blue;
+}
+
+.infoscherm b{
+    text-align: right;
+    color: green 
+}
+
+.volgendeTrein{
+    width: 480px;
+    height: 25px;
+    background-color: blue;
+}
+
+.volgendeTrein p{
+    color: white;
+}
+
+.spoor-number {
+    font-size: 4em;
+}
+
+.spoor-number span {
+    font-size: 0.5em;
+    vertical-align: text-top;
+}
+
+
