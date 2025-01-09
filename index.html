@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekopdracht - NS-Treinbord</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/javascript.js" defer></script>
 </head>
+
 <body>
     <div id="container">
         <div id="left">
@@ -13,25 +16,29 @@
         </div>
         <div id="middle">
             <!-- Hier komt de reizigers info -->
-             <div class = "infoscherm">
-                <span>1 </span>
-                <span>minuut</span>
-                <span><b>Intercity <img src="assets\img\ns_logo.png" alt="NS logo"></b></span>
-                <p>Herleen</p>
-                <p>Via 's-Hertogenbosch, Eindhoven, Weert, Roermond en Sittard</p>
-                <div class = "volgendeTrein">
+            <div class="infoscherm">
+                <div id="bovensteRegel">
+                    <div id="timeLeft">1 minuut</div>
+                    <div><b>Intercity</b> <img src="assets\img\ns_logo.png" alt="NS logo"></div>
+                </div>
+                
+                <div id="bestemming"><b>Herleen </b></div>
+                <br>
+                <div id='via'>Via 's-Hertogenbosch, Eindhoven, Weert, Roermond en Sittard</div>
+                <div class="volgendeTrein">
                     <p>Hierna/next: 08:54 IC Venlo</p>
                 </div>
-             </div>
+            </div>
         </div>
         <div id="right">
             <!-- hier komt het spoor nummer -->
-             <div class = "spoorInfo">
-                    <span class="vierkantje"></span>
-                    <b>spoor</b>
-                    <span class="spoor-number"><b>18</b><span><b>b</b></span></span>
-             </div>
+            <div class="spoorInfo">
+                <span class="vierkantje"></span>
+                <b>spoor</b>
+                <span class="spoor-number"><b>18</b><span><b>b</b></span></span>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
