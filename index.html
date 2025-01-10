@@ -9,35 +9,50 @@
     <script src="assets/js/javascript.js" defer></script>
 </head>
 
+
 <body>
     <div id="container">
         <div id="left">
             <!-- hier komt de klok -->
+            <div id="klok">
+                <div id="wijzer-uur"></div>
+                <div id="wijzer-min"></div>
+                <div id="wijzer-sec">
+                  <div class="line"></div>
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+                <div id="minuten"></div>
+                <div id="logo"></div>
+              </div>
         </div>
-        <div id="middle">
-            <!-- Hier komt de reizigers info -->
-            <div class="infoscherm">
-                <div id="bovensteRegel">
-                    <div id="timeLeft">1 minuut</div>
-                    <div><b>Intercity</b> <img src="assets\img\ns_logo.png" alt="NS logo"></div>
-                </div>
-                
-                <div id="bestemming"><b>Herleen </b></div>
-                <br>
-                <div id='via'>Via 's-Hertogenbosch, Eindhoven, Weert, Roermond en Sittard</div>
-                <div class="volgendeTrein">
-                    <p>Hierna/next: 08:54 IC Venlo</p>
-                </div>
+    <div id="middle">
+        <!-- Hier komt de reizigers info -->
+        <div class="infoscherm">
+            <div id="bovensteRegel">
+                <div id="timeLeft">1 minuut</div>
+                <div><b>Intercity</b> <img id="NSlogo" src="assets\img\ns_logo.png" alt="NS logo"></div>
+            </div>
+
+            <div id="bestemming"><b>Herleen </b></div>
+            <br>
+            <div id='via'>Via 's-Hertogenbosch, Eindhoven, Weert, Roermond en Sittard</div>
+            <div id="trein">
+                <img id="trein" src="assets\img\trein.png" alt="Trein logo">
+            </div>  
+            <div class="volgendeTrein">
+                <p>Hierna/next: 08:54 IC Venlo</p>
             </div>
         </div>
-        <div id="right">
-            <!-- hier komt het spoor nummer -->
-            <div class="spoorInfo">
-                <span class="vierkantje"></span>
-                <b>spoor</b>
-                <span class="spoor-number"><b>18</b><span><b>b</b></span></span>
-            </div>
+    </div>
+    <div id="right">
+        <!-- hier komt het spoor nummer -->
+        <div class="spoorInfo">
+            <span class="vierkantje"></span>
+            <b>spoor</b>
+            <span class="spoor-number"><b>18</b><span><b>b</b></span></span>
         </div>
+    </div>
     </div>
 </body>
 

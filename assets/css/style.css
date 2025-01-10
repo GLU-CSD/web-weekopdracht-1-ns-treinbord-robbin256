@@ -52,14 +52,32 @@
     background-color: rgb(8, 105, 196);
 }
 
-img{
+#NSlogo{
     text-align: right;
     width: 80px; 
     height: auto; 
     top: 5px;
     right: 2px;
     position: relative;
+    background-color:  pink;
 }
+
+#trein{
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    width: 250px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+#trein img  {
+    max-height: 50px;
+}
+
+
 
 .infoscherm{
     width: 480px;
@@ -67,6 +85,8 @@ img{
     background-color: white;
     border: 3px solid black;
     color: blue;
+    display: flex;
+    flex-direction: column;
 }
 
 .infoscherm b{
@@ -109,4 +129,141 @@ img{
 #bovensteRegel{
     display:flex;
     justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #klok {
+    position: relative;
+
+    width: 195px; 
+    height: 195px;
+    border-radius: 1950px;
+    background: #fff;
+    margin-top: 10px;
+    margin-left: 19px;
+    box-shadow: inset 0 1px 20px rgba(0, 0, 0, 0.3), inset 0 0 40px 40px rgba(0, 0, 200, 0.05); /* Schaduw */
+    border: 4px solid #888888; 
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+body.loaded #klok {
+    opacity: 1;
+}
+
+#wijzer-uur,
+#wijzer-min,
+#wijzer-sec {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    margin-left: -3px; 
+    width: 6px;
+    transition: transform 1s;
+}
+
+#wijzer-uur {
+    margin-top: -30px;
+    height: 60px;
+    background: black;
+    border-radius: 0 0 3px 3px;
+    transform-origin: 2px 20px;
+}
+
+#wijzer-min {
+    margin-top: -40px;
+    height: 60px;
+    background: black;
+    border-radius: 0 0 3px 3px;
+    transform-origin: 3px 40px
+}
+
+#wijzer-sec {
+    margin-top: -40px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform-origin: 3px 40px;
+}
+
+#wijzer-sec:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    background: #990000;
+    border-radius: 50%;
+}
+
+#wijzer-sec .line {
+    background: #990000;
+    width: 2px;
+    height: 30px;
+}
+
+#wijzer-sec .line:first-child {
+    height: 40px;
+}
+
+#wijzer-sec .line:last-child {
+    height: 20px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+#wijzer-sec .circle {
+    border: 2px solid #990000;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+#minuten {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+#minuten .minuut {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -6px;
+    margin-top: -1px;
+    width: 12px;
+    height: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#minuten .minuut:before {
+    content: "";
+    display: block;
+    background: #1441AD;
+    width: 2px;
+    height: 2px;
+    border-radius: 6px;
+}
+
+#minuten .minuut:nth-child(5n+1):before {
+    width: 12px;
+    height: 6px;
 }
